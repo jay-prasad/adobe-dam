@@ -1,0 +1,33 @@
+.add-row-btn {
+  float: right; /* Position to the right */
+  margin-right: 10px; /* Space from edge */
+}
+
+.doc-table,
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doc-table th, .doc-table td,
+.asset-table th, .asset-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.doc-table th,
+.asset-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}

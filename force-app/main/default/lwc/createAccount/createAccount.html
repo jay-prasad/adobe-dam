@@ -1,0 +1,15 @@
+<template>
+  <div class="slds-m-top_medium slds-m-bottom_x-large">
+      <!-- Default/basic -->
+      <div class="slds-p-around_medium lgc-bg">
+          <lightning-input type="text" label="Account Name" onchange={handleChange} value={accountName}></lightning-input>
+          <lightning-textarea name="input1" label="Results" value={result} ></lightning-textarea>
+
+      </div>
+      <div class="slds-p-around_small lgc-bg">
+          <lightning-button variant="brand" label="Call REST Create Account" title="" onclick={handleCreateAccount} class="slds-m-left_x-small"></lightning-button>
+          <lightning-button variant="brand" label="Call Create Account" title="" onclick={createNewAccountNormal} class="slds-m-left_x-small"></lightning-button>
+      </div>
+     
+  </div>
+</template>

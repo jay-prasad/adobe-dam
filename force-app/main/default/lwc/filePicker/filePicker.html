@@ -1,0 +1,21 @@
+<!-- assetSelector.html -->
+<template>
+    <div class="asset-selectors">
+        <h3>Asset Selectors Consumer Apps in LWC</h3>
+        <button onclick={loadAssetSelector}>Find Assets</button>
+        
+        <div>
+            <template if:true={showPreview}>
+                <div class="asset-selector-preview-image">
+                    <img src={previewImageUrl} alt="Asset Selector preview image" class="spectrum-Image-img_fdc794" />
+                </div>
+            </template>
+        </div>
+
+        <!-- <template lwc:if={showDialog}> -->
+            <dialog class="asset-selector-dialog">
+                <div class="asset-selector-container" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;"></div>
+            </dialog>
+        <!-- </template> -->
+    </div>
+</template>
